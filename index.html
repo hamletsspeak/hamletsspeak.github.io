@@ -81,4 +81,38 @@
     <input id="radio_3" name="pol" type="radio" value="3">
     <label for="radio_3">Не скажу</label><br>
     <p id="end"></p>
+
+    <h3>Количество конечностей:</h3>
+    <input type="radio" id="0-" name="limbs" required>
+    <label for="nol-">Ноль</label><br>
+    <input type="radio" id="1-" name="limbs" required>
+    <label for="odin-">Одна</label><br>
+    <input type="radio" id="2-" name="limbs" required>
+    <label for="dva-">Две</label><br>
+    <input type="radio" id="3-" name="limbs" required>
+    <label for="tri-">Три</label><br>
+    <input type="radio" id="4-" name="limbs" required>
+    <label for="chet-">Четыре</label><br>
+    <input type="radio" id="5-" name="limbs" required>
+    <label for="pyat-">Пять</label><br>
+
+    <h3><label for="superpowers">Сверхспособности:</label></h3>
+    <select id="superpowers" name="superpower">
+    <option value="Missing">Отсутствуют</option>
+    <option value="god">Бессмертие</option >
+    <option value="wall">Прохождение сквозь стены</option>
+    <option value="levit">Левитация</option >
+    <option value="invis">Невидимость</option>
+    <option value="power">Сила</option>
+    </select>
+
+    <h3><label for="biogr">Биография:</label></h3>
+    <textarea name="biogr" id="bio" cols="50" rows="5" placeholder="Напишите о себе: "></textarea>
+
+    <h3><label for="introduction">С контрактом ознакомлен(а)
+    <input type="checkbox" id="introduction" name="introduction" required>
+    </label></h3>
+
+    <input type="submit" value="Отправить">
+    
 </body>
