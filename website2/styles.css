@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html 
+{
+	font-family: 'Open Sans', sans-serif;
+    background-color: #111111;
+    color: rgb(255, 255, 255);
+}
+
+a {
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+	color: white;
+}
+
+a:hover {
+	color: rgb(121, 121, 121);
+}
+
+/* шапка */
+
+#header {
+	font-size: 50px;
+}
+
+.logo {
+	float: left;
+	padding-right: 15px;
+    padding-top: 40px;
+}
+
+.site_title {
+	padding-top: 130px;
+}
+
+#navigation {
+	padding: 15px;
+	border: 10px solid #2e2e2e;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#navigation ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	font-size: 22px;
+	flex-direction: column;
+}
+
+/* links */
+#header, #hyperlinks {
+	background-color: #111111;
+	margin-bottom: 10px;
+	padding: 40px;
+}
+
+/* form */
+#form 
+{
+	background-color:#222222;
+	border: 10px solid #2e2e2e;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 2vw;
+	font-size: 30px;
+}
+
+/* down */
+#footer {
+	background-color: #222222;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+/* table */
+table 
+{
+	text-align: center;
+	border: 10px solid #222222;
+	border-collapse: collapse;
+}
+
+td, th {
+	width: 150px;
+	padding: 5px;
+	font-size: 18px;
+}
+
+tr:nth-child(odd) {
+	background-color: #383838;
+}
+
+tr:nth-child(even) {
+	background-color: #202020;
+}
+
+/* other */
+.container 
+{
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+a 
+{
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+	color: white;
+}
+
+a:hover 
+{
+	text-decoration: underline;
+}
+
+.tabl 
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.form1 
+{
+	flex: 1;
+	order: 0;
+}
+
+.contF 
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.s 
+{
+	flex: 1;
+	order: 4;
+}
+
+.t 
+{
+	flex: 1;
+	order: 6;
+}
+
+.f 
+{
+	flex: 1;
+	order: 5;
+}
+
+@media screen and (min-width: 1200px) {
+
+	.container {max-width: 960px;}
+
+	.contF {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.s {
+		flex: 1;
+		order: 4;
+	}
+
+	.t {
+		flex: 1;
+		order: 5;
+	}
+	.f {
+		flex: 1;
+		order: 6;
+	}
+
+	#navigation ul{
+		flex-direction: row;
+		justify-content: space-around;
+		font-size: 25px;
+	}
+
+	#header, #hyperlinks {
+		padding: 2vw;
+	}
+
+	#container {
+        font-size: 10pt;
+	}
+}
