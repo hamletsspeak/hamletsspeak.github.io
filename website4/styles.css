@@ -1,0 +1,109 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Raleway";
+	font-weight: 300;
+	color:rgb(255, 0, 255);
+}
+
+p{
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+/* шапка*/
+header {
+    background-color: #303030;
+    border-bottom: 5px solid #a3a3a3;
+    color: #000000;
+}
+
+#navigation li:hover {
+    background-color: rgb(119, 119, 119);
+    transition: 0.4s ease-in-out;
+}
+
+/*ссылки*/
+#hyperlinks {
+    background-color: #949494;
+    transition: 0.4s ease-in-out;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#hyperlinks:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#hyperlinks li{
+    transition: 0.4s ease-in-out;
+}
+
+#hyperlinks li:hover {
+    background-color: #757575;
+}
+
+/*форма*/
+
+form {
+    background-color: #c9c9c9;
+    transition: 0.4s ease-in-out;
+    border: 5px solid black;
+}
+
+form:hover {
+    background-color: white;
+}
+
+/*дно*/
+#footer {
+    border-top: 3px solid black;
+    background-color: black;
+    color: #ff00ff;
+}
+
+/*таблица*/
+
+table {
+    border-collapse: collapse;
+    border: 5px solid #2e2e2e;
+}
+
+#tt{
+    background-color: #7c7c7c;
+}
+
+th, td{
+    transition: 0.4s ease-in-out;
+}
+
+tr:nth-child(odd) {
+    background-color: #8a8a8a;
+}
+
+tr:nth-child(even) {
+    background-color: #a3a3a3;
+}
+
+td:hover{
+    background-color: #1b1b1b;
+}
+
+th:hover{
+    background-color: #292929;
+}
+
+/*прочее */
+
+a {
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fd0130;
+}
