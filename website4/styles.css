@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Lato:ital,wght@1,300&family=Raleway:wght@200&display=swap');
 
 h1{
-    font-family: "Kanit";
+    font-family: "Kanit", sans-serif;
     font-weight: 300;
     color:rgb(255, 255, 255);
 }
@@ -70,10 +70,6 @@ table {
 
 #tt{
     background-color: #ffffff;
-}
-
-th, td{
-    transition: 0.8s ease-in-out;
 }
 
 tr:nth-child(odd) {
