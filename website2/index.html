@@ -1,198 +1,220 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Самый крутой сайт</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>HamOS</title>
     </head>
-<link rel="stylesheet" type="text/css" href="styles.css"/>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<body>
-    <header id="header">
-		<div class="container">
-			<img src="images/дора.jpg" alt='Дора' class="logo" width="350" height="350" title='Логотип'/>
-			<h2 class="site_title">Самый крутой сайт</h2>
-		</div>
-        <p id="elem"></p>
-	</header>
-    <div style="position: fixed; top: 5px; border: rgba(0, 0, 0, 0) -1px solid; background:  rgba(19, 19, 19, 0.925); padding: 10px 50px; border-radius: 15px;"><a href="">Главная страница &emsp;</a><a href="https://vk.com/hamletsspeak">Мой ВК &emsp;</a></li><a href="about/lol/izi.html">FAQ</a></div>
-<div class ="contF">
-    <div class = "s">
-        <div class="container">
-            <div id="hyperlinks">
-                <h2>Списко гиперссылок</h2>
-                <ol>
-                    <!-- 1 -->
-                    <li><a href="http://example.com">Главная страница Example.com</a></li>
-                    <!-- 2 -->  
-                    <li><a href="https://example.com">Главная страница Example.com</a></li>
-                    <!-- 3 -->
-                    <li><a href="ftp://vk.com/audios502225972">Ftp без авторизации</a></li>
-                    <!-- 4 -->
-                    <li><a href="ftp://s0172093:qwerty/audios502225972">Ftp с авторизацией</a></li>
-                    <!-- 5 -->
-                    <li><a href="http://example.com/page#element_id">Ссылка на фрагмент страницы некоторого сайта</a></li>
-                    <!-- 6 -->
-                    <li><a href="#elem"> Ссылка на фрагмент текущей страницы </a></li>
-                    <!-- 7 -->
-                    <li><a href="https://www.youtube.com/watch?v=tt7gP_IW-1w">Ссылка с двумя параметрами в URL</a></li>
-                    <!-- 8 -->
-                    <li>
-                        <nav>
-                            <ul>
-                                <li><a href="#elem" title="start">Заголовок 1</a></li>
-                                <li><a href="#ezh" title="medium">Заголовок 2</a></li>
-                                <li><a href="#end" title="end">Заголовок 3</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <!-- 9 -->
-                    <li> <a> https://www.youtube.com - Ссылка без href</a> </li>
-                    <!-- 10 -->
-                    <li><a href="">Пустой href</a></li>
-                    <!-- 11 -->
-                    <li><a href="https://example.com/" rel="nofollow">Запрещен переход поисковикам</a></li>
-                    <!-- 12 -->
-                    <li><noindex><a href="https://example.com/">Ссылка запрещенная для индексации поисковикам</noindex></li>
-                    <!-- 13 -->
-                    <li><p><a title="Travis Scott" href="https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D1%8D%D0%B2%D0%B8%D1%81_%D0%A1%D0%BA%D0%BE%D1%82%D1%82">TravisScott</a>- американский рэпер, певец, автор песен и музыкальный продюсер.</p></li>
-                    <!-- 14 -->
-                    <li> <a href="https://www.lamborghini.com/ru-en/салон-lamborghini"><img src="https://lamboelite.ru/sites/default/files/pictures/models/655/2018-aventador-svj-1537313953_16.jpg" width="640" height="480"/></a></li>
-                    <!-- 15 -->
-                    <li>
-                        <p id="ezh"></p>
-                        <h3>Нажми на ёжика</h3>
-                        <img src="https://i.pinimg.com/736x/52/8b/dd/528bddaf5840ffc35390d74079b34190.jpg" usemap="#knopka" width="480" height="480">
-                        <map name="knopka">
-                            <area shape="circle" coords="300, 300, 100 " href="https://www.youtube.com/watch?v=OeOWAXkKLvY">
-                        </map>
-                        <h3>Нажми на логотип</h3>
-                        <img src=https://koshelek-card.ru/wp-content/uploads/2020/03/karta-dns.png usemap="#tik" width="400" height="250">
-                        <map name="tik">
-                            <area shape="rect" coords="5,5,600,400" href="https://www.dns-shop.ru/?city=krasnodar">
-                        </map>
-                    </li>
-                    <!-- 16 -->
-                    <li><a href="./dazzle.html">Относительная на страницу в текущем каталоге</a></li>
-                    <!-- 17 -->
-                    <li><a href="/about/coil.html">Относительная на страницу в каталоге about</a></li>
-                    <!--18-20-->
-                    <li><a href="/about/lol/izi.html">Ссылка на задания 18-20</a></li>
-                    <!-- 21 -->
-                    <li><a href="/goose.html">Внутренняя ссылка</a></li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="t">
-        <div class = "tabl">
-            <table class="container">
-                <div>
-                    <tr>
-                        <th colspan="5">Top 20 track's</th>
-                    </tr>
-                    <tr>
-                        <th>Kizaru</th>
-                        <th>BIG BABY TAPE</th>
-                        <th>Playboi Carti</th>
-                        <th>Платина</th>
-                        <th>Дора</th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://soundcloud.com/kizaru_hf/dezhavu?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Дежавю</a></th>
-                        <td><a href="https://soundcloud.com/finesse4real/big-baby-tape-molodoy-platon-vlyubilas?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">ВЛЮБИЛАСЬ</a></td>
-                        <td><a href="https://soundcloud.com/playboicarti/magnolia-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Magnolia</a></td>
-                        <td><a href="https://soundcloud.com/platinarnbklub/serdcedlyawalav?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Сердце для шалав</a></td>
-                        <td><a href="https://soundcloud.com/korolevskaya-musica2/dora-x-meybi-beybi-barbisayz?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Барбисайз</td>
-                    </tr>
-                    <tr>
-                        <th><a href="https://soundcloud.com/kizaru_hf/million-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Million</a></th>
-                        <td><a href="https://soundcloud.com/bigbabytape/big-baby-tape-flip-phone-twerk?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Flip Phone Twerk</td>
-                        <td><a href="https://soundcloud.com/playboicarti/sky?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Sky</a></td>
-                        <td><a href="https://soundcloud.com/platinarnbklub/bandana?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Бандана</a></td>
-                        <td><a href="https://soundcloud.com/finesse4real/og-buda-dora-kapli?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Капли</td>
-                    </tr>
-                    <tr>
-                        <th><a href="https://soundcloud.com/kizaru_hf/mama-makusa-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Mama Makusa</a></th>
-                        <td><a href="https://soundcloud.com/bigbabytape/wasabi-prod-white-punk?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Wasabi</td>
-                        <td><a href="https://soundcloud.com/playboicarti/new-tank?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">New Tank</a></td>
-                        <td><a href="https://soundcloud.com/platinarnbklub/zhopa?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">У Тебя Большая Жопа Я Влюблен</a></td>
-                        <td><a href="https://soundcloud.com/yarcheyarcheded/platina-dora-san-laran?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Сан Ларан</td>
-                    </tr>
-                    <tr>
-                        <th><a href="https://soundcloud.com/kizaru_hf/psychopath-sleepwalker?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Психопат Лунатик</a></th>
-                        <td><a href="https://soundcloud.com/bigbabytape/trap-medals-freestyle?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">FREESTYLE</td>
-                        <td><a href="https://soundcloud.com/playboicarti/vamp-anthem?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Vamp</a></td>
-                        <td><a href="https://soundcloud.com/platinarnbklub/lovv66-feat-platina-valyna?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">ВАЛЫНА(feat.LOVV66)</a></td>
-                        <td><a href="https://soundcloud.com/rhymes_real/dora-ya-boyus-lyudey?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Я боюсь людей</td>
-                    </tr>
+    <p id="elem"></p>
+    <!--Header-->
+    <!--Navigation-->
+    <body class="m-0 p-0">
+        <header class="mb-3 p-2">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <img src="images/дора.jpg" width="150" class="logo" alt="logo">
+                    </div>
+                    <div class="col-sm-auto">
+                        <h1 class="site_title col-sm-4">HamOS</h1>
+                    </div>
                 </div>
-            </table>
-        </div>
-    </div>
-    <br>
-    <div class="f">
-        <div class="container">
-            <div class="form1">
-                <div id="form">
-                    <h2>Форма</h2>
-                    <br>
-                    <form action="/" method="post">
-                        <h3><label for="Name">Ваше имя:</label></h3>
-                        <input id="Name" type="text" placeholder="Введи имя" name="Name"><br>
-
-                        <h3><label for="e-mail">Введи e-mail:</h3>
-                        <input name="email" placeholder="email" type="email"><br>
-
-                        <h3><label for="date">Введи дату рождения: </h3>
-                        <input name="date" placeholder="date" type="date"><br>
-
-                        <h3><label for="pol">Укажи свой пол</label></h3>
-                        <input id="radio_1" name="pol" type="radio" value="1">
-                        <label for="radio_1">Мужской</label><br>
-                        <input id="radio_2" name="pol" type="radio" value="2">
-                        <label for="radio_2">Женский</label><br>
-                        <input id="radio_3" name="pol" type="radio" value="3">
-                        <label for="radio_3">Не скажу</label><br>
-                        <p id="end"></p>
-
-                        <h3>Количество конечностей:</h3>
-                        <input type="radio" id="0-" name="limbs" required>
-                        <label for="nol-">Ноль</label><br>
-                        <input type="radio" id="1-" name="limbs" required>
-                        <label for="odin-">Одна</label><br>
-                        <input type="radio" id="2-" name="limbs" required>
-                        <label for="dva-">Две</label><br>
-                        <input type="radio" id="3-" name="limbs" required>
-                        <label for="tri-">Три</label><br>
-                        <input type="radio" id="4-" name="limbs" required>
-                        <label for="chet-">Четыре</label><br>
-                        <input type="radio" id="5-" name="limbs" required>
-                        <label for="pyat-">Пять</label><br>
-
-                        <h3><label for="superpowers">Сверхспособности:</label></h3>
-                        <select id="superpowers" name="superpower">
-                        <option value="Missing">Отсутствуют</option>
-                        <option value="god">Бессмертие</option >
-                        <option value="wall">Прохождение сквозь стены</option>
-                        <option value="levit">Левитация</option >
-                        <option value="invis">Невидимость</option>
-                        <option value="power">Сила</option>
-                        </select>
-
-                        <h3><label for="biogr">Биография:</label></h3>
-                        <textarea name="biogr" id="bio" cols="50" rows="5" placeholder="Напишите о себе: "></textarea>
-
-                        <h3><label for="introduction">С контрактом ознакомлен(а)
-                        <input type="checkbox" id="introduction" name="introduction" required>
-                        </label></h3>
-                        <input type="submit" value="Отправить">
+            </div>
+        </header>
+            <div class="order-0">
+                <h1 id="parag" class="text-center">Список гиперссылок</h1>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><h1>NAVBAR</h1></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="#"><h3>Home</h3></a>
+                          <a class="nav-link" href="https://vk.com/hamletsspeak"><h3>Contacts</h3></a>
+                          <a class="nav-link" href="about/lol/izi.html"><h3>About</h3></a>
+                        </div>
+                      </div>
+                    </div>
+                </nav>
+                <div id="hyperlinks">
+                    <ol class="list-group list-group-numbered">
+                        <!-- 1 -->
+                        <li class="list-group-item"><a href="http://example.com">Главная страница Example.com</a></li>
+                        <!-- 2 -->  
+                        <li class="list-group-item"><a href="https://example.com">Главная страница Example.com</a></li>
+                        <!-- 3 -->
+                        <li class="list-group-item"><a href="ftp://vk.com/audios502225972">Ftp без авторизации</a></li>
+                        <!-- 4 -->
+                        <li class="list-group-item"><a href="ftp://s0172093:qwerty/audios502225972">Ftp с авторизацией</a></li>
+                        <!-- 5 -->
+                        <li class="list-group-item"><a href="http://example.com/page#element_id">Ссылка на фрагмент страницы некоторого сайта</a></li>
+                        <!-- 6 -->
+                        <li class="list-group-item"><a href="#elem"> Ссылка на фрагмент текущей страницы </a></li>
+                        <!-- 7 -->
+                        <li class="list-group-item"><a href="https://www.youtube.com/watch?v=tt7gP_IW-1w">Ссылка с двумя параметрами в URL</a></li>
+                        <!-- 8 -->
+                        <li class="list-group-item">
+                            <nav>
+                                <ul>
+                                    <li><a href="#elem" title="start">Заголовок 1</a></li>
+                                    <li><a href="#ezh" title="medium">Заголовок 2</a></li>
+                                    <li><a href="#end" title="end">Заголовок 3</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <!-- 9 -->
+                        <li class="list-group-item"><a> https://www.youtube.com - Ссылка без href</a> </li>
+                        <!-- 10 -->
+                        <li class="list-group-item"><a href="">Пустой href</a></li>
+                        <!-- 11 -->
+                        <li class="list-group-item"><a href="https://example.com/" rel="nofollow">Запрещен переход поисковикам</a></li>
+                        <!-- 12 -->
+                        <li class="list-group-item"><noindex><a href="https://example.com/">Ссылка запрещенная для индексации поисковикам</noindex></li>
+                        <!-- 13 -->
+                        <li class="list-group-item"><p><a title="Travis Scott" href="https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D1%8D%D0%B2%D0%B8%D1%81_%D0%A1%D0%BA%D0%BE%D1%82%D1%82">TravisScott</a>- американский рэпер, певец, автор песен и музыкальный продюсер.</p></li>
+                        <!-- 14 -->
+                        <li class="list-group-item nocolor"><a href="https://www.lamborghini.com/ru-en/салон-lamborghini"><img src="https://lamboelite.ru/sites/default/files/pictures/models/655/2018-aventador-svj-1537313953_16.jpg" class="img-fluid" width="480" height="280"/></a></li>
+                        <!-- 15 -->
+                        <li class="list-group-item nocolor">
+                                <p id="ezh"></p>
+                            <h3>Нажми на ёжика</h3>
+                            <img src="https://i.pinimg.com/736x/52/8b/dd/528bddaf5840ffc35390d74079b34190.jpg" class="img-fluid" usemap="#knopka" width="480" height="480">
+                            <map name="knopka">
+                                <area shape="circle" coords="300, 300, 100 " href="https://www.youtube.com/watch?v=OeOWAXkKLvY">
+                            </map>
+                            <h3>Нажми на логотип</h3>
+                            <img src=https://koshelek-card.ru/wp-content/uploads/2020/03/karta-dns.png class="img-fluid" usemap="#tik" width="400" height="250">
+                            <map name="tik">
+                                <area shape="rect" coords="5,5,600,400" href="https://www.dns-shop.ru/?city=krasnodar">
+                            </map>
+                        </li>
+                        <!-- 16 -->
+                        <li class="list-group-item"><a href="./dazzle.html">Относительная на страницу в текущем каталоге</a></li>
+                        <!-- 17 -->
+                        <li class="list-group-item"><a href="/about/coil.html">Относительная на страницу в каталоге about</a></li>
+                        <!--18-20-->
+                        <li class="list-group-item"><a href="/about/lol/izi.html">Ссылка на задания 18-20</a></li>
+                        <!-- 21 -->
+                        <li class="list-group-item"><a href="/goose.html">Внутренняя ссылка</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="d-flex flex-column row">
+                <div class="order-2 order-md-1 mt-3">
+                    <div class="text-center">
+                        <table class="table">
+                            <tr>
+                                <th colspan="3" class="col-12 text-center" id="tt">Top 20 track's</th>
+                            </tr>
+                            <tr>
+                                <th class="col-2">Kizaru</th>
+                                <th class="col-2">BIG BABY TAPE</th>
+                                <th class="col-2">Playboi Carti</th>
+                            </tr>
+                            <tr>
+                                <th class="col-2"><a href="https://soundcloud.com/kizaru_hf/dezhavu?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Дежавю</a></th>
+                                <td class="col-2"><a href="https://soundcloud.com/finesse4real/big-baby-tape-molodoy-platon-vlyubilas?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">ВЛЮБИЛАСЬ</a></td>
+                                <td class="col-2"><a href="https://soundcloud.com/playboicarti/magnolia-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Magnolia</a></td>
+                            </tr>
+                            <tr>
+                                <th class="col-2"><a href="https://soundcloud.com/kizaru_hf/million-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Million</a></th>
+                                <td class="col-2"><a href="https://soundcloud.com/bigbabytape/big-baby-tape-flip-phone-twerk?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Flip Phone Twerk</td>
+                                <td class="col-2"><a href="https://soundcloud.com/playboicarti/sky?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Sky</a></td>
+                            </tr>
+                            <tr>
+                                <th class="col-2"><a href="https://soundcloud.com/kizaru_hf/mama-makusa-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Mama Makusa</a></th>
+                                <td class="col-2"><a href="https://soundcloud.com/bigbabytape/wasabi-prod-white-punk?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Wasabi</td>
+                                <td class="col-2"><a href="https://soundcloud.com/playboicarti/new-tank?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">New Tank</a></td>
+                            </tr>
+                            <tr>
+                                <th class="col-2"><a href="https://soundcloud.com/kizaru_hf/psychopath-sleepwalker?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Психопат Лунатик</a></th>
+                                <td class="col-2"><a href="https://soundcloud.com/bigbabytape/trap-medals-freestyle?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">FREESTYLE</td>
+                                <td class="col-2"><a href="https://soundcloud.com/playboicarti/vamp-anthem?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Vamp</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="order-1 order-md-2 mt-lg-0 mt-3">
+                    <form action="/" class="container">
+                        <div class="formgroup">
+                            <div class="text-center"><h2>Форма</h2></div>
+                            <br>
+                            <label><h4>Ваше имя:</h4></label>
+                            <input type="text" class="form-control сol-4 col-lg-2" required>
+                            <br>
+                        
+                            <label>Введи e-mail: </label>
+                            <input type="email" class="form-control сol-4 col-lg-2" required>
+                            <br>
+                        
+                            <label>Введи дату рождения: </label>
+                            <input type="date" class="form-control сol-4 col-lg-2" required>
+                            <br>
+                        
+                            <label>Пол: </label><br>
+                            <label>
+                                <input type="radio" value="value-1" name="people" required>Мужской
+                            </label>
+                            <label>
+                                <input type="radio" value=" value-2" name="people" required>Женский
+                            </label>
+                            <label>
+                                <input type="radio" value=" value-2" name="people" required>Не скажу
+                            </label>
+                            <br>
+                            <br>
+                                                                                    
+                            <label>Ваше любимое занятие по вечерам:</label><br>
+                            <label>
+                                <input type="radio" value="1" name="hand" required>Кушать
+                            </label>
+                            <label>
+                                <input type="radio" value="2" name="hand" required>Спать
+                            </label>
+                            <label>
+                                <input type="radio" value="3" name="hand" required>Гулять
+                            </label>
+                            <label>
+                                <input type="radio" value="4" name="hand" required>Смотреть кино
+                            </label>
+                            <br>
+                            <br>
+                        
+                            <label>Любимое кино: </label><br>
+                            <select name="cool">
+                                <option value="Thor" required>Бог грома - Тор</option>
+                                <option value="Spider" required>Человек паук</option>
+                                <option value="Iron" required>Железный человек</option>
+                                <option value="Hulk" required>Халк</option>
+                                <option value="America" required>Капитан Америка</option>
+                            </select>
+                            <br>
+                            <br>
+                        
+                            <label>Биография:</label><br>
+                            <textarea name="field" cols="50" rows="10" required class="form-control сol-6 col-lg-3"></textarea>
+                            <br>
+                            <div class="checkbox">
+                                <label for="submit">
+                                    <input type="checkbox" name="submit"> С контрактом ознакомлен
+                                </label>
+                            </div>
+                            <label>
+                                <button type="button">Отправить</button>
+                            </label>
+                        </div>      
                     </form>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<footer id="footer">
-	(c) Урушадзе Гамлет 2022
-</footer>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <p id="end"></p>
+        <footer id="footer" class="container-fluid p-4 mt-lg-3 mt-sm-0">
+            (c) Урушадзе Гамлет 2022
+        </footer>
+    </body>
 </html>
