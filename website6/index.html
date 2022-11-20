@@ -215,107 +215,29 @@
                                 </form>
                             </div>
                             <!--CALCULA-->
-                            <form>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <label><h2>Калькулятор №1</h2></label><br>
-                                        <label for="price">Выберите сорт макулатуры:</label>
-                                        <select name="" id="price" class="form-control mb-3">
-                                            <option value="9" data-txt="9">Картон (9 руб.)</option>
-                                            <option value="8" data-txt="9">Книги, журналы, газеты (8 руб.)</option>
-                                            <option value="10" data-txt="10">Архив (10 руб.)</option>
-                                        </select>
-                                        <label for="weight"><h5>Укажите вес (КГ.):</h5> </label>
-                                        <input type="text" class="js-range-slider mt-3" name="my_range" id="weight" value=""/>
-                                        <div id="logistic" class="mt-3">
-                                            <input type="checkbox" class="checkbox" id="box1" value="2">
-                                            <label for="box1"><h6>С выездом к вам</h6></label><br>
-                                            <input type="checkbox" class="checkbox" id="box2" data-price="1" value="1">
-                                            <label for="box2"><h6>С погрузкой вместо вас</h6></label>
-                                        </div>
-                                        <div class="d-block bg-success p-2 text-white font-weight-bold rounded-bottom">Итого вы получите: <span class="sum">0</span> руб. <span></span>
-                                        </div>
-                                    </div>
+                            <form class="text-center">
+                                <h2>Калькулятор стоимости</h2>
+                                <h2 id="price" class="start-price"></h2>
+                                <p>Количество товара:</p>
+                                <input value="1" id="quantity" type="text" />
+                                <h2 class="subtitle">Тип товара:</h2>
+                                <select class="form__select" name="type" id="select">
+                                    <option value="1" name="prod1" id="firstProduct">Кола 100р.</option>
+                                    <option value="2" name="prod2" id="secondProduct">Чипсы 200р.</option>
+                                    <option value="3" name="prod3" id="threeProduct">Мороженное 300р.</option>
+                                </select>
+                                <div class="form__radios" id="radios">
+                                    <input type="radio" name="radio" id="hiddenR" />
+                                    <input type="radio" name="radio" value="option1" /> С крабом +10р.
+                                    <input type="radio" name="radio" value="option2" /> С луком +14р.
+                                    <input type="radio" name="radio" value="option3" /> С беконом +88р.
                                 </div>
-                            </form>
-                            <script>
-                                
-                                $(".js-range-slider").ionRangeSlider({
-                                    skin:"round",
-                                    min: 100,
-                                    max: 1000,
-                                    step: 10,
-                                    grid: true
-                                });
-
-                                $('#price, #weight, #box1, #box2').on('change', function(){
-                                   sum(); 
-                                })
-                                function sum(){
-                                    var price = $('#price').val();
-                                    var weight = $('#weight').val();
-                                    var box1 = $('#box1');
-                                    var box2 = $('#box2');
-                                    
-                                    //if (box1.prop('cheched')){
-                                    //    box1.val(2);
-                                    //}else{
-                                    //    box1.val(0);
-                                    //}
-                                    //if (box2.prop('cheched')){
-                                    //    box2.val(1);
-                                    //}else{
-                                    //    box1.val(0);
-                                    //}
-
-                                    var total=$('#logistic input:checked').get().reduce((sum,n)=>sum + + n.value,0)
-                                    var sum = (price - total)*weight;
-                                    $('.sum').text(sum);
-                                }   
-                            </script>
-                            <form>
-                                <label><h2>Калькулятор №2</h2></label><br>
-                                <div class="row mb-3">
-                                  <div class="form-group col-md-6 col-sm-6">
-                                    <p class="badge badge-warning"><h4>Вес (кг)</h4></p>
-                                    <input type="text" name="date" class="form-control" id="weight" required="" placeholder="1500" required=""/>
-                                  </div>
-                                  <div class="form-group col-md-6 col-sm-6">
-                                    <p class="badge badge-warning"><h4>Объем (куб²)</h4></p>
-                                    <input type="text" name="adress" id="vol" class="form-control" placeholder="2" required=""/>
-                                  </div>
+                                <div class="form__checkboxes" id="checkboxes">
+                                    <input type="checkbox" name="prop1" id="check1" /> Шоколадный допинг +133р.
+                                    <input type="checkbox" name="prop2" id="check2" /> Ванильный допинг +7р.
                                 </div>
-                                <div class="custom-control custom-checkbox row d-flex justify-content-center mb-3">
-                                  <div class="col-md-3" style="visibility: visible;">
-                                    <input type="checkbox" id="load" name="mess" class="custom-control-input"/>
-                                    <label class="custom-control-label" for="load"><h6>Нужна погрузка</h6></label>
-                                  </div>
-                               
-                                  <div class="col-md-3" style="visibility: visible;">
-                                    <input type="checkbox" id="del" name="mess" class="custom-control-input"/>
-                                    <label class="custom-control-label" for="del"><h6>Доставка до места</h6></label>
-                                  </div>
-                               
-                                  <div class="col-md-3" style="visibility: visible;">
-                                    <input type="checkbox" id="frag" name="mess" class="custom-control-input"/>
-                                    <label class="custom-control-label" for="frag"><h6>Хрупкий груз</h6></label>
-                                  </div>
-                                </div>
-                                <div class="row mb-3">
-                            
-                                  <div class="form-group col-md-12">
-                                    <label for="range"><h6>Расстояние</h6> <span class="rasstoyanie">0</span> <span>км</span></label>
-                                    
-                                    <input type="range" class="custom-range" min="50" max="5000" step="50" id="range" value="500"/>
-                                  </div>
-                               
-                                </div>
-                                <div class="row col-12 mb-3"><span id="out">0.0</span> <span class="rub">₽</span></div>
-                                <div class="row">
-                                    <div class="col-md-2 col-12">
-                                      <input type="button" name="adress" id="btn" class="btn-block btn btn-primary" value="Считать"/>
-                                    </div>
-                                </div>
+                                <br />
+                                <button onclick="updatePrice(event);">Рассчитать стоимость</button>
                             </form>
                         </div>
                     </div>
