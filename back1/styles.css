@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Lato:ital,wght@1,300&family=Raleway:wght@200&display=swap');
+
+h1{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    color:rgb(255, 255, 255);
+}
+
+h2,h3,h4,h5,h6{
+    font-family: "Kanit";
+    font-weight: 400;
+    color:rgb(0, 0, 0);
+}
+
+#hero .container{
+    position: relative;
+    padding-top: 75px;
+}
+
+#hero h1{
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    columns: white;
+    font-family: "Kanit", sans-serif;
+}
+
+/*backgroung*/
+body{
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+/*links*/
+#hyperlinks {
+    background-color: #08f700;
+    transition: 0.1s ease-in-out;
+    border: 5px solid rgb(19, 76, 182);
+}
+
+#hyperlinks:hover {
+    background-color: white;
+}
+
+#hyperlinks li{
+    transition: 0.1s ease-in-out;
+}
+
+#hyperlinks li:hover {
+    background-color: #16be00;
+}
+
+#hyperlinks li.nocolor:hover{
+    background-color: white;
+}
+    
+#hyperlinks li.nocolor{
+    transition: 0.1s ease-in-out;
+}
+
+/*table*/
+table {
+    border-collapse: collapse;
+    border: 5px solid rgb(19, 76, 182);
+}
+
+#tt{
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+tr:nth-child(even) {
+    background-color: #7a7a7a;
+}
+
+td:hover{
+    background-color: #00c3ff;
+}
+
+th:hover{
+    background-color: #00ff2a;
+}
+
+/*footer*/
+#footer {
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+
+form {
+    background-color: #ffffff;
+    border: 5px solid rgb(19, 76, 182);
+    font-family: "Raleway", sans-serif;
+}
+
+button {
+    background-color: #ffffff;
+    border: 3px solid rgb(19, 76, 182);
+    color: black;
+}
+
+button:hover {
+    background-color: #ffffff;
+    border: 3px solid rgb(19, 76, 182);
+    color: black;
+}
