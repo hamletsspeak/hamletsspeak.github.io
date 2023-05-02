@@ -1,6 +1,6 @@
 <style>
 body{
-    background-color: #fcee0a;
+    background-color: #4B0082;
     display: flex;
     justify-content:center;
     margin-top:5%;
@@ -9,8 +9,8 @@ body{
 .main{
     padding: 40px;
     width: 250px;
-    background-color: #00ffd2;
-    border: 2px solid #fd0130;
+    background-color: #F0E68C;
+    border: 2px solid #000000;
 }
 
 h1{
