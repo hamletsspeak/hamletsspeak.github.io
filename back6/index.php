@@ -1,7 +1,7 @@
 <?php
-$user = 'u52927';
-$pass = '5758562';
-$db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+$user = 'u52976';
+$pass = '1701674';
+$db = new PDO('mysql:host=localhost;dbname=u52976', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
 $pass_hash=array();
 try{
   $get=$db->prepare("select pass from admin where user=?");
@@ -91,9 +91,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   $values['walk'] = 0;
   $values['fly'] = 0;
   
-  $user = 'u52927';
-  $pass = '5758562';
-  $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $user = 'u52976';
+  $pass = '1701674';
+  $db = new PDO('mysql:host=localhost;dbname=u52976', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
   try{
       $id=$_GET['edit_id'];
       $get=$db->prepare("SELECT * FROM form WHERE id=?");
@@ -203,9 +203,9 @@ else {
       setcookie('check_error', '', 100000);
     }
     
-    $user = 'u52927';
-    $pass = '5758562';
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $user = 'u52976';
+    $pass = '1701674';
+    $db = new PDO('mysql:host=localhost;dbname=u52976', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if(!$errors){
       $upd=$db->prepare("UPDATE form SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio WHERE id=:id");
       $cols=array(
@@ -238,9 +238,9 @@ else {
   }
   else {
     $id=$_POST['dd'];
-    $user = 'u52927';
-    $pass = '5758562';
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $user = 'u52976';
+    $pass = '1701674';
+    $db = new PDO('mysql:host=localhost;dbname=u52976', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     try {
       $del=$db->prepare("DELETE FROM super WHERE per_id=?");
       $del->execute(array($id));
