@@ -1,7 +1,7 @@
 <?php
 $user = 'u52976';
 $pass = '1701674';
-$db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+$db = new PDO('mysql:host=localhost;dbname=u52976', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
 $pass_hash=array();
 try{
   $get=$db->prepare("select pass from admin where user=?");
