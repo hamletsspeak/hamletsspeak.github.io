@@ -205,7 +205,7 @@ else {
     
     $user = 'u52976';
     $pass = '1701674';
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $db = new PDO('mysql:host=localhost;dbname=u52976', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if(!$errors){
       $upd=$db->prepare("UPDATE form SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio WHERE id=:id");
       $cols=array(
@@ -240,7 +240,7 @@ else {
     $id=$_POST['dd'];
     $user = 'u52976';
     $pass = '1701674';
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $db = new PDO('mysql:host=localhost;dbname=u52976', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     try {
       $del=$db->prepare("DELETE FROM super WHERE per_id=?");
       $del->execute(array($id));
